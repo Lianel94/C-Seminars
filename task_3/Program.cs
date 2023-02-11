@@ -9,3 +9,11 @@ while(ind < count){
     Console.WriteLine(writeNum = writeNum + 1);
     ind++;
 } 
+
+// int x = int.Parse(console.Readline());
+// int y = x
+// x=-x
+//while(x<=y){
+//  console.write(x + ", ")
+//  x++
+//}
