@@ -11,9 +11,9 @@ while(ind < count){
 } 
 
 // int x = int.Parse(console.Readline());
-// int y = x
-// x=-x
+// int y = x;
+// x=-x;
 //while(x<=y){
-//  console.write(x + ", ")
-//  x++
+//  console.write(x + ", ");
+//  x++;
 //}
