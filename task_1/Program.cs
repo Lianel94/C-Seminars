@@ -8,7 +8,4 @@
 Console.Write("Type the number");
 int number = int.Parse(Console.ReadLine());
 int result = number * number;
-Console.Write("Квадрат числа ");
-Console.Write(number);
-Console.Write(" равен: ");
-Console.Write(result);
+Console.Write("Квадрат числа " + number + " равен: " + result);
