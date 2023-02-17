@@ -48,3 +48,19 @@ else
 {
 	Console.WriteLine($"The number {userNumber} не кратно 7 и 23 одновременно");
 }
+
+// два числа - является ли одно из чисел квадратом второго (5, 25 - да, -4, 16 - да, 25, 5 - да, 8, 9 - нет)
+
+Console.Write("Type the first number ");
+int userNumber1 = int.Parse(Console.ReadLine());
+Console.Write("Type the second number ");
+int userNumber2 = int.Parse(Console.ReadLine());
+
+if(userNumber1 * userNumber1 == userNumber2 || userNumber2 * userNumber2 == userNumber1) //Math.Pow(b, 2) == a
+{
+	Console.WriteLine("yes");
+}
+else
+{
+	Console.WriteLine("no");
+}
