@@ -19,4 +19,18 @@ int digit2 = userNum % 10; //7
 Console.WriteLine($"Two-digit number of the number {userNum} without the middle digit is {digit1 * 10 + digit2}");
 Console.WriteLine($"Two-digit number of the number {userNum} without the middle digit is {digit1}{digit2}");
 
+// Два числа, является ли второе число - кратным, если не кратно, то выводить остаток от деления (54, 5)
 
+Console.Write("Type the first number ");
+int userNum1 = int.Parse(Console.ReadLine());
+Console.Write("Type the second number ");
+int userNum2 = int.Parse(Console.ReadLine());
+
+if(userNum1 % userNum2 == 0) 
+{
+	Console.WriteLine($"{userNum2} кратно {userNum1}");
+}
+else 
+{
+	Console.WriteLine($"{userNum2} не кратно {userNum1} и остаток = {userNum1 % userNum2}");
+}
