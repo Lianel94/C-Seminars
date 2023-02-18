@@ -92,3 +92,26 @@ int y2 = int.Parse(Console.ReadLine()); // double xi = double.Parse(Console.Read
 
 Console.WriteLine($"Расстояние между двумя точками с координатами {x1}-{y1} и {x2}-{y2} равно {Math.Round(Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2)), 2)}");
 // если через double - math.round - no need
+
+//число на вход, и выводит таблицу квадрат от 1 до числа
+// 5 - 1 4 9 16 25
+
+Console.Write("Введите число: ");
+int userNum = int.Parse(Console.ReadLine());
+// int ind = 1;
+
+// while(ind <= userNum)
+// {
+// 	Console.WriteLine(Math.Pow(ind, 2));
+// 	ind++;
+// }
+
+int[] result = new int[userNum];
+for(int i = 1; i <= userNum; i++)
+{
+	result[i - 1] = i * i;
+}
+for (int i = 0; i < userNum; i++)
+{
+	Console.Write($"{result[i]} ");
+}
