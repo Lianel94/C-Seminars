@@ -3,12 +3,12 @@
 
 int GetSum(int n)
 {
-	int sum = 0;
-	for (int i = 1; i <= n; i++)
-	{
-		sum += i;
-	}
-	return sum;
+    int sum = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        sum += i;
+    }
+    return sum;
 }
 
 Console.Clear();
@@ -20,16 +20,23 @@ Console.WriteLine($"The sum from 1 to {n} is {GetSum(n)}");
 
 int GetDigitNumber(int userNum)
 {
-	int i = 0;
-	while(userNum > 0)
-	{
-		i++;
-		userNum /= 10;
-	}
-	return i;
+    int i = 0;
+
+    if (userNum < 0)
+    {
+        userNum *= (-1);
+    }
+
+    while (userNum > 0)
+    {
+        userNum /= 10;
+        i++;
+    }
+    return i;
 }
 
 Console.Write("Type your number: ");
 int userNum = int.Parse(Console.ReadLine());
 Console.WriteLine($"The number of digits in the {userNum} is {GetDigitNumber(userNum)}");
+
 
