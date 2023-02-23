@@ -116,27 +116,27 @@ for (int i = 0; i < userNum; i++)
 	Console.Write($"{result[i]} ");
 }
 
-Console.Clear();
-Console.Write("Write the number N: ");
-int N = int.Parse(Console.ReadLine());
-int i = 1;
-int m = N;
+// Console.Clear();
+// Console.Write("Write the number N: ");
+// int N = int.Parse(Console.ReadLine());
+// int i = 1;
+// int m = N;
 
-if (N < 0)
-{
-	i = N;
-	m = -N;
-	N = -1;
-}
+// if (N < 0)
+// {
+// 	i = N;
+// 	m = -N;
+// 	N = -1;
+// }
 
-int[] Result = new int[m];
-int j = 0;
-for(; i <= N; i++)
-{
-	Result[j] = i * i;
-	j++;
-}
-for (j = 0; j < m; j++)
-{
-	Console.Write($"{Result[j]} ");
-}
+// int[] Result = new int[m];
+// int j = 0;
+// for(; i <= N; i++)
+// {
+// 	Result[j] = i * i;
+// 	j++;
+// }
+// for (j = 0; j < m; j++)
+// {
+// 	Console.Write($"{Result[j]} ");
+// }
