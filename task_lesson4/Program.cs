@@ -45,7 +45,13 @@ Console.WriteLine($"The number of digits in the {userNum} is {GetDigitNumber(use
 int Multiply(int num)
 {
 	int result = 1;
-	for (int i = 1; i <= n; i++)
+	int i = 2;
+	if (num < 0)
+	{
+		i = num;
+		num = -1;
+	}
+	for (; i <= num; i++)
 	{
 		result *= i;
 	}
@@ -54,4 +60,5 @@ int Multiply(int num)
 
 Console.Write("Type your number: ");
 int num = int.Parse(Console.ReadLine());
-Console.WriteLine($"The sum from 1 to {n} is {Multiply(num)}");
+Console.WriteLine($"The multiplication from 1 to {n} is {Multiply(num)}");
+
