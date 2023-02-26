@@ -13,4 +13,13 @@ int[] GetRandomArray(int size, int minValue, int maxValue)
 int[] array = GetRandomArray(4, -9, 9);
 Console.WriteLine(String.Join(", ", array));
 
+int[] ReplacePosNeg(int[] array)
+{
+	for(int i = 0; i < array.Length; i++)
+	{
+		array[i] *= -1;
+	} 
+	return array;
+}
 
+Console.WriteLine(String.Join(", ",ReplacePosNeg(array)));
