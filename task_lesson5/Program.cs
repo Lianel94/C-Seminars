@@ -51,7 +51,7 @@ int[] SumPosNeg(int[] array)
 	int[] result = new int[2]; // создали сразу массив из двух элементов
 	foreach (int el in array)
 	{
-		result[0] += el > 0 ? el : 0;
+		result[0] += el > 0 ? el : 0; // если el > 0 то плюсуем к резалту, если нет то ноль
 		result[1] += el < 0 ? el : 0;
 	}
 	return result;
