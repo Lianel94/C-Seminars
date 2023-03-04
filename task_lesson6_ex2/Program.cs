@@ -9,6 +9,12 @@ int b1 = int.Parse(Console.ReadLine());
 Console.Write("Type the third number: ");
 int c1 = int.Parse(Console.ReadLine());
 
+// Console.Write("Type the numbers through space: ");
+// string[] st = Console.ReadLine().Split(' ');
+// int a = int.Parse(st[0]);
+// int b = int.Parse(st[1]);
+// int c = int.Parse(st[2]);
+
 // void isThereTriangle(int a1, int b1, int c1)
 // {
 // 	if(a1 + b1 > c1 && a1 + c1 > b1 && b1 + c1 > a1)
