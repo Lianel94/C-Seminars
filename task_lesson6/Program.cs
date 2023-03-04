@@ -1,4 +1,4 @@
-﻿// перевернуть массив: 12345 - 54321
+﻿// 39 перевернуть массив: 12345 - 54321
 Console.Clear();
 
 int[] GetArray(int size, int minValue, int maxValue)
@@ -27,4 +27,5 @@ int[] array = GetArray(size, 1, 99);
 Console.WriteLine(String.Join(", ", array));
 
 Console.WriteLine($"Switched elements: {String.Join(", ", SwitchElements(array))}");
+
 
