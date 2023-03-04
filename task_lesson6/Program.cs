@@ -14,9 +14,8 @@ int[] GetArray(int size, int minValue, int maxValue)
 int[] SwitchElements(int[] array)
 {
 	int[] switchResult = new int[array.Length];
-	for(int i = 1; i < array.Length; i++)
+	for(int i = 0; i < array.Length; i++)
 	{
-		switchResult[0] = array[array.Length - 1];
 		switchResult[i] = array[array.Length - i - 1];
 	}
 	return switchResult;
