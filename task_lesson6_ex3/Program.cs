@@ -5,7 +5,7 @@
 Console.Clear();
 Console.Write("Type the number: ");
 int number = int.Parse(Console.ReadLine());
-string res = DecToNum(number, 2);
+string res = DecToNum(number, 2); //16
 
 Console.WriteLine($"{number} -> {res}");
 
