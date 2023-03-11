@@ -10,23 +10,20 @@ int m = int.Parse(Console.ReadLine());
 Console.Write("Type N: ");
 int n = int.Parse(Console.ReadLine());
 
-for(int i = m; i <= n; i++)
-{
-	Console.WriteLine($"{i}");
-}
+Console.WriteLine(PrintNumbers(m, n));
 
 Console.WriteLine();
 
 Console.WriteLine(PrintNumbers(n,m));
 
-string PrintNumbers(int m, int n)
+string PrintNumbers(int start, int end)
 {
-	if(m == n)
+	if(end == start)
 	{
-		Console.WriteLine(n);
-		return "n";
+		Console.WriteLine(end);
+		return start.ToString();
 	}
-	string s = PrintNumbers(m, n - 1) + " " + n.ToString();
+	string s = PrintNumbers(start, end - 1) + " " + end.ToString();
 	Console.WriteLine(s);
 	return s;
 }
